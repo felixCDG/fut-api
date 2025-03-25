@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BR93 - Pesquisa de Ligas</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Liga</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <span>B</span>R93
+  <header>
+    <h1><span class="red">B</span><span class="dark-blue">R90</span></h1>
+  </header>
+
+  <div class="main-content">
+    <p>Pesquise Aqui a sua Ligue!</p>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Digite o nome da liga" />
+      <button id="searchButton">Pesquisar</button>
     </div>
-    <div class="container">
-        <div class="title">Pesqui-se Aqui a Liga do seu Interesse!</div>
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Pesquise Aqui !">
-            <button class="search-button">PESQUISAR</button>
-        </div>
-        <div class="image-container">
-            <div class="circle"></div>
-            <div class="red-ball"></div>
-            <img src="./img/gol.png" alt="Gol" class="goal">
-            <img src="./img/jogador.png" alt="Jogador" class="player">
-        </div>
-    </div>
+
+    <!-- Resultados da pesquisa -->
+    <div id="resultContainer"></div>
+  </div>
+
+  <!-- Link para o arquivo script.js -->
+  <script src="script.js"></script>
 </body>
 </html>
+
